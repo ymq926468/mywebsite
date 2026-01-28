@@ -3,104 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='admaven-placement' content="BqdUEqdg8">
+
     <title>天马联盟网</title>
+
+    <!-- ================= PopAds Popunder 代码放这里 ================= -->
+    <!-- ⚠️ 这里粘贴你在 PopAds 后台获取的【完整 JS 代码】 -->
+    <!-- 示例：<script type="text/javascript">...</script> -->
+    <!-- ================= PopAds Popunder 代码结束 ================= -->
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
+            min-height: 100vh;
             background: linear-gradient(45deg, #ff7a18, #ffb400, #d9a7c7, #fffcdc);
             background-size: 400% 400%;
-            animation: backgroundAnimation 15s ease infinite;
+            animation: bg 15s ease infinite;
             color: #fff;
         }
 
-        @keyframes backgroundAnimation {
+        @keyframes bg {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
-        header {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 15px 0;
+        header, footer {
+            background: rgba(0,0,0,0.7);
             text-align: center;
+            padding: 15px;
         }
 
         .content {
-            padding: 20px;
-            min-height: 80vh;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
         }
 
-        .ad-banner {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: rgba(255,255,255,0.85);
+        .card {
+            background: rgba(255,255,255,0.9);
             color: #333;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 10px;
             text-align: center;
-            border-radius: 6px;
         }
 
-        footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            text-align: center;
-            padding: 10px 0;
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #ff7a18;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #ffb400;
+        }
+
+        .notice {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- ✅ Admaven / 成人 Pop / 直链代码（已正确放置） -->
-<script type="text/javascript" data-cfasync="false">
-(function(){
-    var c=window,
-    j="b16f82ee5513ecfdc06df61cd0e71753",
-    y=[["siteId",4748474],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],
-    b=[
-        "d3d3LnhhZHNtYXJ0LmNvbS9TL2Jqc29uLWZvcm1hdHRlci5taW4uanM=",
-        "ZDExZW5xMnJ5bXkweWwuY2xvdWRmcm9udC5uZXQvT0F4RVNyL0R0S2wva3N2Zy5taW4uY3Nz"
-    ],
-    n=-1,t,h,
-    i=function(){
-        clearTimeout(h);
-        n++;
-        if(b[n]){
-            t=c.document.createElement("script");
-            t.type="text/javascript";
-            t.async=!0;
-            t.src="https://"+atob(b[n]);
-            t.crossOrigin="anonymous";
-            t.onerror=i;
-            h=setTimeout(i,5000);
-            c.document.body.appendChild(t);
-        }
-    };
-    if(!c[j]){
-        try{Object.freeze(c[j]=y)}catch(e){}
-        i();
-    }
-})();
-</script>
-<!-- ✅ 广告代码结束 -->
-
 <header>
     <h1>天马联盟网</h1>
-    <p>您的广告合作伙伴，专业推广，持续增长</p>
+    <p>成人流量 · CPM · Pop · 直链变现</p>
 </header>
 
 <div class="content">
-    <h2>最新广告展示</h2>
 
-    <div class="ad-banner">
-        <h3>小说推广</h3>
-        <p>点击下方查看精彩内容</p>
+    <div class="card">
+        <h2>🔥 热门推荐</h2>
+        <p>高转化成人内容，点击即可进入</p>
+
+        <!-- ================= 可见直链广告位（不属于 Pop） ================= -->
+        <!-- 这里放 PopAds / 其他联盟提供的【Direct Link】 -->
+        <a href="https://example.com" target="_blank" class="btn">
+            立即进入
+        </a>
+        <!-- ================= 可见直链广告位结束 ================= -->
+
+        <div class="notice">
+            * 18+ 内容，请确认已成年
+        </div>
     </div>
+
+    <div class="card">
+        <h3>广告合作说明</h3>
+        <p>本站支持 Pop / CPM / Direct Link 广告形式</p>
+        <p>适合海外与成人流量投放</p>
+    </div>
+
 </div>
 
 <footer>
