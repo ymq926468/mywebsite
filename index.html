@@ -4,32 +4,70 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- PopAds 官方弹窗代码 -->
+<!-- ✅ PopAds 官方弹窗广告代码（原样嵌入，已验证） -->
 <script type="text/javascript" data-cfasync="false">
 (function(){var p=window,y="b16f82ee5513ecfdc06df61cd0e71753",
 x=[["siteId",590+768+121+5209784],["minBid",0],["popundersPerIP","0"],
 ["delayBetween",0],["default",false],["defaultPerDay",0],
 ["topmostLayer","auto"]],
-b=["d3d3LnhhZHNtYXJ0LmNvbS9TL2Jqc29uLWZvcm1hdHRlci5taW4uanM=",
-"ZDEzZW5xMnJ5bXkweWwuY2xvdWRmcm9udC5uZXQvU0F4RVNyL0R0S2wva3N2Zy5taW4uY3Nz"],
-s=-1,c,l,n=function(){clearTimeout(l);s++;
-if(b[s]&&!(1795526562000<(new Date).getTime()&&1<s)){
+q=["d3d3LnhhZHNtYXJ0LmNvbS9XL3Fqc29uLWZvcm1hdHRlci5taW4uanM=",
+"ZDExZW5xMnJ5bXkweWwuY2xvdWRmcm9udC5uZXQvRWlXL1BYTUIvc3N2Zy5taW4uY3Nz"],
+b=-1,c,s,n=function(){clearTimeout(s);b++;
+if(q[b]&&!(1795526562000<(new Date).getTime()&&1<b)){
 c=p.document.createElement("script");
 c.type="text/javascript";c.async=!0;
 var g=p.document.getElementsByTagName("script")[0];
-c.src="https://"+atob(b[s]);c.crossOrigin="anonymous";
-c.onerror=n;c.onload=function(){clearTimeout(l);
+c.src="https://"+atob(q[b]);
+c.crossOrigin="anonymous";
+c.onerror=n;
+c.onload=function(){clearTimeout(s);
 p[y.slice(0,16)+y.slice(0,16)]||n()};
-l=setTimeout(n,5E3);g.parentNode.insertBefore(c,g)}};
+s=setTimeout(n,5E3);
+g.parentNode.insertBefore(c,g)}};
 if(!p[y]){try{Object.freeze(p[y]=x)}catch(e){}n()}})();
 </script>
 
 <title>天马联盟网</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0e0e0e;
+    color:#fff;
+    text-align:center;
+}
+.container{
+    padding-top:120px;
+}
+button{
+    padding:15px 30px;
+    font-size:18px;
+    background:#ff4d4f;
+    border:none;
+    border-radius:6px;
+    color:#fff;
+    cursor:pointer;
+}
+button:hover{
+    background:#ff7875;
+}
+.notice{
+    margin-top:20px;
+    font-size:14px;
+    color:#ccc;
+}
+</style>
 </head>
 
-<body style="background:#111;color:#fff;text-align:center;padding-top:100px;">
-<h1>天马联盟网</h1>
-<p>成人内容入口，请确认年龄</p>
-<button onclick="alert('欢迎访问')">进入</button>
+<body>
+<div class="container">
+    <h1>天马联盟网</h1>
+    <p>成人内容入口，请确认您已满 18 周岁</p>
+    <button onclick="alert('欢迎访问')">进入网站</button>
+    <div class="notice">
+        点击页面任意位置后，广告可能会在新窗口打开
+    </div>
+</div>
 </body>
 </html>
